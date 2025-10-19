@@ -1,0 +1,45 @@
+﻿<section class="py-4 py-md-5 bg-gradient-soft">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+      <h1 class="h4 m-0">Explora Amigurumis</h1>
+      <div class="small text-secondary">{{ filtrados().length }} resultado(s)</div>
+    </div>
+
+    <div class="categories-ribbon py-2 mb-3" role="group" aria-label="Filtros de categoría">
+      <button type="button" class="btn me-2" [attr.data-category]="'Todos'" [ngClass]="{
+          'btn-primary': categoriaSeleccionada() === 'Todos',
+          'btn-outline-primary': categoriaSeleccionada() !== 'Todos'
+        }" (click)="seleccionarCategoria('Todos')">
+        Todos
+      </button>
+
+      <button *ngFor="let c of categorias()" type="button" class="btn me-2" [attr.data-category]="c"
+        [ngClass]="{
+          'btn-primary': categoriaSeleccionada() === c,
+          'btn-outline-primary': categoriaSeleccionada() !== c
+        }" (click)="seleccionarCategoria(c)">
+        {{ c }}
+      </button>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 mt-1" [@listFade]>
+      <div class="col" *ngFor="let a of filtrados()">
+        <div class="card h-100 border-0 shadow-sm ami-card hover-lift" [attr.data-category]="a.categoria" (click)="seleccionarDestacado(a)">
+          <div class="ratio ratio-1x1 bg-light position-relative overflow-hidden">
+            <img class="w-100 h-100 object-fit-cover" [src]="a.imagen" [alt]="a.nombre" (click)="openImage(a.imagen, a.nombre); $event.stopPropagation()" />
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <h3 class="h6 mb-1">{{ a.nombre }}</h3>
+                <span class="badge rounded-pill text-bg-primary">{{ a.categoria }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <app-image-modal [visible]="isModalOpen()" [src]="modalImage()" [alt]="modalAlt()" (closed)="closeImage()"></app-image-modal>
+  </div>
+</section>

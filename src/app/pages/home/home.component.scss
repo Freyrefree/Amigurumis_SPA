@@ -1,0 +1,43 @@
+/* Pastel section wrapper */
+.bg-gradient-soft {
+  background: radial-gradient(120% 80% at 0% 0%, rgba(255, 227, 236, .65) 0%, rgba(255,255,255,.85) 60%, rgba(255,255,255,1) 100%),
+              radial-gradient(100% 90% at 100% 10%, rgba(231, 240, 255, .65) 0%, rgba(255,255,255,0) 70%);
+  border-radius: 24px;
+  padding-block: .25rem; /* preserve spacing in section */
+  position: relative;
+  overflow: hidden;
+  z-index: 0; /* crea contexto y permite pseudo-elementos detrás */
+}
+
+.bg-gradient-soft::before,
+.bg-gradient-soft::after {
+  display: none; /* desactiva decorativos para evitar superposición visual */
+}
+
+/* Asegura que el contenido quede por encima de los blobs */
+.bg-gradient-soft > * { position: relative; z-index: 1; }
+
+.hover-lift {
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+.hover-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.8rem 1.6rem rgba(137, 166, 255, .28), 0 0.3rem 0.9rem rgba(255, 163, 203, .22) !important;
+}
+
+.object-fit-cover { object-fit: cover; }
+
+/* Compact buttons grouping look nicer with gaps already in template */
+.btn-group .btn { border-radius: 999px !important; }
+
+/* Cinta de categorías: desplazable y con separación uniforme */
+.categories-ribbon {
+  display: flex;
+  gap: .5rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-inline: .25rem;
+}
+.categories-ribbon::-webkit-scrollbar { height: 6px; }
+.categories-ribbon::-webkit-scrollbar-track { background: rgba(0,0,0,.04); border-radius: 999px; }
+.categories-ribbon::-webkit-scrollbar-thumb { background: rgba(13,110,253,.25); border-radius: 999px; }

@@ -1,1 +1,238 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos globales y helpers */
+
+:root {
+  /* Pastel palette */
+  --pastel-pink: #ffe3ec;   /* blush */
+  --pastel-peach: #ffe9d6;  /* peach */
+  --pastel-mint: #e7fff3;   /* mint */
+  --pastel-blue: #e7f0ff;   /* baby blue */
+  --pastel-lilac: #efe8ff;  /* lilac */
+
+  /* Background gradient using multiple pastels */
+  --brand-gradient: radial-gradient(60% 70% at 10% 0%, var(--pastel-pink) 0%, transparent 60%),
+                    radial-gradient(70% 60% at 90% 20%, var(--pastel-blue) 0%, transparent 65%),
+                    radial-gradient(80% 70% at 50% 100%, var(--pastel-mint) 0%, transparent 60%),
+                    linear-gradient(180deg, #fff 0%, #fdfbff 100%);
+
+  /* Surfaces with gentle pastel tint */
+  --surface: #ffffff;
+  --surface-2: color-mix(in srgb, #ffffff 78%, var(--pastel-lilac));
+  --border-soft: color-mix(in srgb, var(--pastel-lilac) 55%, var(--pastel-blue));
+  --shadow-soft: 0 10px 28px rgba(137, 166, 255, 0.24), 0 4px 12px rgba(255, 163, 203, 0.18);
+  --radius: 18px;
+
+  /* brand accents to blend with Bootstrap primary (softened) */
+  --brand-primary-1: #8bb7ff;
+  --brand-primary-2: #b9d2ff;
+
+  /* Category tints */
+  --cat-accesorios: #ffd1dc;     /* pinkish */
+  --cat-flores: #d3f8e2;         /* mint */
+  --cat-llaveros: #e4c1f9;       /* lilac */
+  --cat-personajes: #c8e7ff;     /* blue */
+  --cat-personalizados: #fff1b8; /* vanilla */
+}
+
+html, body { height: 100%; }
+body {
+  background: var(--brand-gradient);
+  min-height: 100vh;
+  /* subtle texture overlay */
+  background-attachment: fixed;
+}
+
+/* Helper para imágenes en cover */
+.object-fit-cover { object-fit: cover; }
+
+/* Suaviza transiciones de botones */
+.btn { transition: all .15s ease; }
+
+/* Focus ring accesible y moderno */
+.btn:focus, .form-control:focus, .form-select:focus {
+  box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25) !important;
+}
+
+/* Botones con estilo sutil moderno conservando Bootstrap */
+.btn-primary {
+  color: #123 !important;
+  background-image: linear-gradient(180deg, var(--brand-primary-2), var(--brand-primary-1));
+  border: 1px solid color-mix(in srgb, var(--brand-primary-1) 70%, #0b5ed7);
+  box-shadow: 0 6px 16px rgba(13, 110, 253, .22);
+}
+.btn-primary:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+.btn-outline-primary {
+  background: rgba(13, 110, 253, 0.06);
+  border-color: rgba(13, 110, 253, 0.35);
+}
+.btn-outline-primary:hover {
+  background: rgba(13, 110, 253, 0.12);
+}
+
+/* Badges con gradiente sutil */
+.badge.text-bg-primary {
+  color: #19324d;
+  background-image: linear-gradient(180deg, var(--brand-primary-2), var(--brand-primary-1));
+  border: 1px solid color-mix(in srgb, var(--brand-primary-1) 70%, #0b5ed7);
+  box-shadow: 0 2px 8px rgba(13,110,253,.18);
+}
+
+/* Tarjetas modernas tipo glass para .ami-card y featured */
+.ami-card,
+.card.featured {
+  border-radius: var(--radius) !important;
+  background: var(--surface); /* evita overlay de color en zona de imagen */
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+.ami-card[data-category],
+.card.featured[data-category] {
+  background: var(--surface); /* sin tinte sobre el bloque de imagen */
+  border-color: color-mix(in srgb, var(--cat, var(--pastel-lilac)) 35%, #fff);
+}
+.ami-card .card-body,
+.card.featured .card-body {
+  background: var(--surface); /* sin tintes para evitar overlays */
+}
+.ami-card[data-category] .card-body,
+.card.featured[data-category] .card-body { background: var(--surface); }
+.ami-card .ratio,
+.card.featured .ratio {
+  background: transparent !important; /* sin fondo que pueda teñir la imagen */
+  border-bottom: 1px solid color-mix(in srgb, var(--border-soft) 60%, #fff);
+}
+.ami-card img,
+.card.featured img {
+  transition: transform .35s ease;
+}
+.ami-card:hover img { transform: scale(1.03); }
+
+/* Asegura que las imágenes queden por encima de cualquier decorativo */
+.ratio > img {
+  position: absolute; /* respeta comportamiento Bootstrap ratio */
+  inset: 0;
+  z-index: 1;
+}
+
+/* Category mapping → sets --cat variable */
+.ami-card[data-category='Accesorios'], .card.featured[data-category='Accesorios'] { --cat: var(--cat-accesorios); }
+.ami-card[data-category='Flores'], .card.featured[data-category='Flores'] { --cat: var(--cat-flores); }
+.ami-card[data-category='Llaveros'], .card.featured[data-category='Llaveros'] { --cat: var(--cat-llaveros); }
+.ami-card[data-category='Personajes'], .card.featured[data-category='Personajes'] { --cat: var(--cat-personajes); }
+.ami-card[data-category='Personalizados'], .card.featured[data-category='Personalizados'] { --cat: var(--cat-personalizados); }
+.ami-card[data-category='Todos'], .card.featured[data-category='Todos'] { --cat: var(--pastel-lilac); }
+
+/* Botones con tinte por categoría */
+.btn[data-category='Accesorios'] { --cat: var(--cat-accesorios); }
+.btn[data-category='Flores'] { --cat: var(--cat-flores); }
+.btn[data-category='Llaveros'] { --cat: var(--cat-llaveros); }
+.btn[data-category='Personajes'] { --cat: var(--cat-personajes); }
+.btn[data-category='Personalizados'] { --cat: var(--cat-personalizados); }
+.btn[data-category='Todos'] { --cat: var(--pastel-lilac); }
+
+.btn.btn-primary[data-category] {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--cat) 65%, #fff), color-mix(in srgb, var(--cat) 72%, #fff));
+  border-color: color-mix(in srgb, var(--cat) 55%, #fff);
+  color: #1e2a3a !important;
+}
+.btn.btn-primary[data-category]:hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+}
+.btn.btn-outline-primary[data-category] {
+  color: #1e2a3a;
+  border-color: color-mix(in srgb, var(--cat) 55%, #3a4f6a);
+  background: color-mix(in srgb, var(--cat) 14%, transparent);
+}
+.btn.btn-outline-primary[data-category]:hover {
+  background: color-mix(in srgb, var(--cat) 22%, #fff);
+}
+
+/* Ribbon (etiqueta) en las imágenes */
+.ribbon {
+  display: none !important; /* oculta etiqueta en imagen para eliminar cualquier overlay */
+  /* (si quieres mantenerla, quitamos esta línea y reducimos tamaño) */
+  position: absolute;
+  top: 10px; left: 10px;
+  z-index: 2;
+  padding: .35rem .6rem;
+  border-radius: 999px;
+  font-size: .75rem;
+  font-weight: 600;
+  color: #213547;
+  background: color-mix(in srgb, var(--cat, var(--pastel-lilac)) 70%, #fff);
+  border: 1px solid color-mix(in srgb, var(--cat, var(--pastel-lilac)) 55%, #fff);
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--cat, var(--pastel-lilac)) 24%, transparent);
+}
+
+/* Badge tint by category */
+.ami-card[data-category] .badge.text-bg-primary,
+.card.featured[data-category] .badge.text-bg-primary {
+  background: color-mix(in srgb, var(--cat) 70%, #fff);
+  border: 1px solid color-mix(in srgb, var(--cat) 55%, #fff);
+  box-shadow: 0 2px 10px color-mix(in srgb, var(--cat) 30%, transparent);
+}
+
+/* Hover shadow tinted by category */
+.ami-card[data-category].hover-lift:hover,
+.card.featured[data-category].hover-lift:hover,
+.card.featured[data-category]:hover {
+  box-shadow: 0 1rem 2rem color-mix(in srgb, var(--cat) 32%, transparent), var(--shadow-soft) !important;
+}
+
+/* Rounded media corners for a softer look */
+.ami-card .ratio > img,
+.card.featured .ratio > img { border-radius: 10px; }
+
+/* Utilidades */
+.glass { background: var(--surface-2); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,.35); }
+.shadow-soft { box-shadow: var(--shadow-soft) !important; }
+.rounded-xl { border-radius: var(--radius) !important; }
+
+/* Modo oscuro pastel (sin negros en cards) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #ffffff;
+    --surface-2: color-mix(in srgb, #ffffff 82%, var(--pastel-lilac));
+    --border-soft: color-mix(in srgb, var(--pastel-lilac) 55%, var(--pastel-blue));
+    --shadow-soft: 0 10px 28px rgba(137, 166, 255, 0.26), 0 4px 12px rgba(255, 163, 203, 0.20);
+    --brand-gradient: radial-gradient(60% 70% at 10% 0%, var(--pastel-pink) 0%, transparent 60%),
+                      radial-gradient(70% 60% at 90% 20%, var(--pastel-blue) 0%, transparent 65%),
+                      radial-gradient(80% 70% at 50% 100%, var(--pastel-mint) 0%, transparent 60%),
+                      linear-gradient(180deg, #fff 0%, #fdfbff 100%);
+  }
+}
+/* Pastel glass navbar */
+.pastel-nav {
+  background: linear-gradient(180deg, color-mix(in srgb, #fff 78%, var(--pastel-blue)), color-mix(in srgb, #fff 90%, var(--pastel-pink)));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid color-mix(in srgb, var(--pastel-lilac) 55%, var(--pastel-blue));
+}
+.pastel-nav .navbar-toggler { border-color: color-mix(in srgb, var(--pastel-blue) 60%, #7aa2ff); }
+.pastel-nav .navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(31,45,58,0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+.pastel-nav .container { position: relative; z-index: 2; }
+.pastel-nav .navbar-brand {
+  font-weight: 800;
+  letter-spacing: .2px;
+  background: linear-gradient(90deg, #ff9ec9, #8bb7ff, #7ce5b2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.pastel-nav .nav-link {
+  border-radius: 999px;
+  padding-inline: .9rem;
+  color: #1f2d3a;
+}
+.pastel-nav .nav-link:hover {
+  background: color-mix(in srgb, var(--pastel-blue) 30%, #fff);
+}
+.pastel-nav .btn-primary {
+  background: linear-gradient(180deg, color-mix(in srgb, #ff9ec9 70%, #fff), color-mix(in srgb, #8bb7ff 70%, #fff));
+  border-color: color-mix(in srgb, #8bb7ff 55%, #fff);
+  color: #1e2a3a !important;
+}
