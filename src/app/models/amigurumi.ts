@@ -15,5 +15,6 @@ export interface Amigurumi {
   categoria: AmigurumiCategory;
   descripcion: string;
   imagen: string; // URL relativa a /public o absoluta
+  galeria?: string[]; // imágenes adicionales para modal/slider
   etiquetas?: string[];
 }

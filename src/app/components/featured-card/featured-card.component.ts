@@ -22,12 +22,12 @@ import { animate, style, transition, trigger } from '@angular/animations';
   template: `
     <div class="card border-0 shadow-sm overflow-hidden featured" [attr.data-category]="amigurumi?.categoria" [@fadeInScale]="amigurumi?.id">
       <div class="ratio ratio-21x9 bg-light position-relative overflow-hidden">
-                <div class="ribbon" *ngIf="amigurumi">{{ amigurumi?.categoria }}</div>
+                <div class="ribbon" *ngIf="amigurumi">{{ amigurumi!.categoria }}</div>
         <img *ngIf="amigurumi" class="w-100 h-100 object-fit-cover" [src]="amigurumi.imagen" [alt]="amigurumi.nombre" />
       </div>
       <div class="card-body">
         <h2 class="h4 mb-2">{{ amigurumi?.nombre }}</h2>
-        <span class="badge rounded-pill text-bg-primary">{{ amigurumi?.categoria }}</span>
+        <span class="badge rounded-pill text-bg-primary">{{ amigurumi!.categoria }}</span>
         <p class="text-secondary mt-2 mb-0">{{ amigurumi?.descripcion }}</p>
       </div>
     </div>

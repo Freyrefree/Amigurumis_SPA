@@ -3,9 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node tools/dev.mjs",
+    "prestart": "node tools/generate-manifest.mjs",
     "build": "ng build",
+    "prebuild": "node tools/generate-manifest.mjs",
     "watch": "ng build --watch --configuration development",
+    "prewatch": "node tools/generate-manifest.mjs",
+    "manifest": "node tools/generate-manifest.mjs",
     "test": "ng test"
   },
   "prettier": {

@@ -1,492 +1,534 @@
-﻿[
-    {
-        "id":  "accesorios-1",
-        "nombre":  "Accesorios 1",
-        "categoria":  "Accesorios",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Accesorios/1.jpg"
-    },
-    {
-        "id":  "flores-1",
-        "nombre":  "Flores 1",
-        "categoria":  "Flores",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Flores/1.jpg"
-    },
-    {
-        "id":  "flores-2",
-        "nombre":  "Flores 2",
-        "categoria":  "Flores",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Flores/2.jpg"
-    },
-    {
-        "id":  "llaveros-1",
-        "nombre":  "Llaveros 1",
-        "categoria":  "Llaveros",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Llaveros/1.jpg"
-    },
-    {
-        "id":  "llaveros-2",
-        "nombre":  "Llaveros 2",
-        "categoria":  "Llaveros",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Llaveros/2.jpg"
-    },
-    {
-        "id":  "llaveros-3",
-        "nombre":  "Llaveros 3",
-        "categoria":  "Llaveros",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Llaveros/3.jpg"
-    },
-    {
-        "id":  "llaveros-4",
-        "nombre":  "Llaveros 4",
-        "categoria":  "Llaveros",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Llaveros/4.jpg"
-    },
-    {
-        "id":  "personajes-1",
-        "nombre":  "Personajes 1",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/1.jpg"
-    },
-    {
-        "id":  "personajes-2",
-        "nombre":  "Personajes 2",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/10.jpg"
-    },
-    {
-        "id":  "personajes-3",
-        "nombre":  "Personajes 3",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/11.jpg"
-    },
-    {
-        "id":  "personajes-4",
-        "nombre":  "Personajes 4",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/12.jpg"
-    },
-    {
-        "id":  "personajes-5",
-        "nombre":  "Personajes 5",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/13.jpg"
-    },
-    {
-        "id":  "personajes-6",
-        "nombre":  "Personajes 6",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/14.jpg"
-    },
-    {
-        "id":  "personajes-7",
-        "nombre":  "Personajes 7",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/15.jpg"
-    },
-    {
-        "id":  "personajes-8",
-        "nombre":  "Personajes 8",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/16.jpg"
-    },
-    {
-        "id":  "personajes-9",
-        "nombre":  "Personajes 9",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/17.jpg"
-    },
-    {
-        "id":  "personajes-10",
-        "nombre":  "Personajes 10",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/18.jpg"
-    },
-    {
-        "id":  "personajes-11",
-        "nombre":  "Personajes 11",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/19.jpg"
-    },
-    {
-        "id":  "personajes-12",
-        "nombre":  "Personajes 12",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/2.jpg"
-    },
-    {
-        "id":  "personajes-13",
-        "nombre":  "Personajes 13",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/20.jpg"
-    },
-    {
-        "id":  "personajes-14",
-        "nombre":  "Personajes 14",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/21.jpg"
-    },
-    {
-        "id":  "personajes-15",
-        "nombre":  "Personajes 15",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/22.jpg"
-    },
-    {
-        "id":  "personajes-16",
-        "nombre":  "Personajes 16",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/23.jpg"
-    },
-    {
-        "id":  "personajes-17",
-        "nombre":  "Personajes 17",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/24.jpg"
-    },
-    {
-        "id":  "personajes-18",
-        "nombre":  "Personajes 18",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/25.jpg"
-    },
-    {
-        "id":  "personajes-19",
-        "nombre":  "Personajes 19",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/26.jpg"
-    },
-    {
-        "id":  "personajes-20",
-        "nombre":  "Personajes 20",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/27.jpg"
-    },
-    {
-        "id":  "personajes-21",
-        "nombre":  "Personajes 21",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/28.jpg"
-    },
-    {
-        "id":  "personajes-22",
-        "nombre":  "Personajes 22",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/29.jpg"
-    },
-    {
-        "id":  "personajes-23",
-        "nombre":  "Personajes 23",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/3.jpg"
-    },
-    {
-        "id":  "personajes-24",
-        "nombre":  "Personajes 24",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/30.jpg"
-    },
-    {
-        "id":  "personajes-25",
-        "nombre":  "Personajes 25",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/31.jpg"
-    },
-    {
-        "id":  "personajes-26",
-        "nombre":  "Personajes 26",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/32.jpg"
-    },
-    {
-        "id":  "personajes-27",
-        "nombre":  "Personajes 27",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/33.jpg"
-    },
-    {
-        "id":  "personajes-28",
-        "nombre":  "Personajes 28",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/34.jpg"
-    },
-    {
-        "id":  "personajes-29",
-        "nombre":  "Personajes 29",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/35.jpg"
-    },
-    {
-        "id":  "personajes-30",
-        "nombre":  "Personajes 30",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/36.jpg"
-    },
-    {
-        "id":  "personajes-31",
-        "nombre":  "Personajes 31",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/37.jpg"
-    },
-    {
-        "id":  "personajes-32",
-        "nombre":  "Personajes 32",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/38.jpg"
-    },
-    {
-        "id":  "personajes-33",
-        "nombre":  "Personajes 33",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/39.jpg"
-    },
-    {
-        "id":  "personajes-34",
-        "nombre":  "Personajes 34",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/4.jpg"
-    },
-    {
-        "id":  "personajes-35",
-        "nombre":  "Personajes 35",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/40.jpg"
-    },
-    {
-        "id":  "personajes-36",
-        "nombre":  "Personajes 36",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/41.jpg"
-    },
-    {
-        "id":  "personajes-37",
-        "nombre":  "Personajes 37",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/42.jpg"
-    },
-    {
-        "id":  "personajes-38",
-        "nombre":  "Personajes 38",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/43.jpg"
-    },
-    {
-        "id":  "personajes-39",
-        "nombre":  "Personajes 39",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/5.jpg"
-    },
-    {
-        "id":  "personajes-40",
-        "nombre":  "Personajes 40",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/6.jpg"
-    },
-    {
-        "id":  "personajes-41",
-        "nombre":  "Personajes 41",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/7.jpg"
-    },
-    {
-        "id":  "personajes-42",
-        "nombre":  "Personajes 42",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/8.jpg"
-    },
-    {
-        "id":  "personajes-43",
-        "nombre":  "Personajes 43",
-        "categoria":  "Personajes",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personajes/9.jpg"
-    },
-    {
-        "id":  "personalizados-1",
-        "nombre":  "Personalizados 1",
-        "categoria":  "Personalizados",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personalizados/1.jpg"
-    },
-    {
-        "id":  "personalizados-2",
-        "nombre":  "Personalizados 2",
-        "categoria":  "Personalizados",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personalizados/10.jpg"
-    },
-    {
-        "id":  "personalizados-3",
-        "nombre":  "Personalizados 3",
-        "categoria":  "Personalizados",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personalizados/11.jpg"
-    },
-    {
-        "id":  "personalizados-4",
-        "nombre":  "Personalizados 4",
-        "categoria":  "Personalizados",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personalizados/12.jpg"
-    },
-    {
-        "id":  "personalizados-5",
-        "nombre":  "Personalizados 5",
-        "categoria":  "Personalizados",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personalizados/13.jpg"
-    },
-    {
-        "id":  "personalizados-6",
-        "nombre":  "Personalizados 6",
-        "categoria":  "Personalizados",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personalizados/14.jpg"
-    },
-    {
-        "id":  "personalizados-7",
-        "nombre":  "Personalizados 7",
-        "categoria":  "Personalizados",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personalizados/15.jpg"
-    },
-    {
-        "id":  "personalizados-8",
-        "nombre":  "Personalizados 8",
-        "categoria":  "Personalizados",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personalizados/16.jpg"
-    },
-    {
-        "id":  "personalizados-9",
-        "nombre":  "Personalizados 9",
-        "categoria":  "Personalizados",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personalizados/17.jpg"
-    },
-    {
-        "id":  "personalizados-10",
-        "nombre":  "Personalizados 10",
-        "categoria":  "Personalizados",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personalizados/18.jpg"
-    },
-    {
-        "id":  "personalizados-11",
-        "nombre":  "Personalizados 11",
-        "categoria":  "Personalizados",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personalizados/19.jpg"
-    },
-    {
-        "id":  "personalizados-12",
-        "nombre":  "Personalizados 12",
-        "categoria":  "Personalizados",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personalizados/2.jpg"
-    },
-    {
-        "id":  "personalizados-13",
-        "nombre":  "Personalizados 13",
-        "categoria":  "Personalizados",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personalizados/20.jpg"
-    },
-    {
-        "id":  "personalizados-14",
-        "nombre":  "Personalizados 14",
-        "categoria":  "Personalizados",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personalizados/3.jpg"
-    },
-    {
-        "id":  "personalizados-15",
-        "nombre":  "Personalizados 15",
-        "categoria":  "Personalizados",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personalizados/4.jpg"
-    },
-    {
-        "id":  "personalizados-16",
-        "nombre":  "Personalizados 16",
-        "categoria":  "Personalizados",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personalizados/5.jpg"
-    },
-    {
-        "id":  "personalizados-17",
-        "nombre":  "Personalizados 17",
-        "categoria":  "Personalizados",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personalizados/6.jpg"
-    },
-    {
-        "id":  "personalizados-18",
-        "nombre":  "Personalizados 18",
-        "categoria":  "Personalizados",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personalizados/7.jpg"
-    },
-    {
-        "id":  "personalizados-19",
-        "nombre":  "Personalizados 19",
-        "categoria":  "Personalizados",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personalizados/8.jpg"
-    },
-    {
-        "id":  "personalizados-20",
-        "nombre":  "Personalizados 20",
-        "categoria":  "Personalizados",
-        "descripcion":  "",
-        "imagen":  "/assets/images/spa/Personalizados/9.jpg"
-    }
+[
+  {
+    "id": "accesorios-bolsa-flores",
+    "nombre": "Bolsa Flores",
+    "categoria": "Accesorios",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Accesorios/Bolsa%20Flores/Bolsa%20Flores.png",
+    "galeria": [
+      "assets/images/spa/Accesorios/Bolsa%20Flores/Bolsa%20Flores.png"
+    ]
+  },
+  {
+    "id": "accesorios-mono",
+    "nombre": "Moño",
+    "categoria": "Accesorios",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Accesorios/Mo%C3%B1o.png",
+    "galeria": [
+      "assets/images/spa/Accesorios/Mo%C3%B1o.png"
+    ]
+  },
+  {
+    "id": "accesorios-porta-celular",
+    "nombre": "Porta Celular",
+    "categoria": "Accesorios",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Accesorios/Porta%20Celular/Porta%20Celular1.png",
+    "galeria": [
+      "assets/images/spa/Accesorios/Porta%20Celular/Porta%20Celular1.png",
+      "assets/images/spa/Accesorios/Porta%20Celular/Porta%20Celular2.png"
+    ]
+  },
+  {
+    "id": "accesorios-separadores",
+    "nombre": "Separadores",
+    "categoria": "Accesorios",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Accesorios/Separadores.jpg",
+    "galeria": [
+      "assets/images/spa/Accesorios/Separadores.jpg"
+    ]
+  },
+  {
+    "id": "flores-1",
+    "nombre": "Flores 1",
+    "categoria": "Flores",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Flores/1.jpg",
+    "galeria": [
+      "assets/images/spa/Flores/1.jpg"
+    ]
+  },
+  {
+    "id": "flores-girasol",
+    "nombre": "Girasol",
+    "categoria": "Flores",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Flores/Girasol.png",
+    "galeria": [
+      "assets/images/spa/Flores/Girasol.png"
+    ]
+  },
+  {
+    "id": "llaveros-2",
+    "nombre": "Llaveros 1",
+    "categoria": "Llaveros",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Llaveros/2.jpg",
+    "galeria": [
+      "assets/images/spa/Llaveros/2.jpg"
+    ]
+  },
+  {
+    "id": "llaveros-3",
+    "nombre": "Llaveros 2",
+    "categoria": "Llaveros",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Llaveros/3.jpg",
+    "galeria": [
+      "assets/images/spa/Llaveros/3.jpg"
+    ]
+  },
+  {
+    "id": "llaveros-4",
+    "nombre": "Llaveros 3",
+    "categoria": "Llaveros",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Llaveros/4.jpg",
+    "galeria": [
+      "assets/images/spa/Llaveros/4.jpg"
+    ]
+  },
+  {
+    "id": "personajes-deadpool",
+    "nombre": "Deadpool",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/Deadpool/13.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/Deadpool/13.jpg",
+      "assets/images/spa/Personajes/Deadpool/31.jpg",
+      "assets/images/spa/Personajes/Deadpool/34.jpg"
+    ]
+  },
+  {
+    "id": "personajes-goku",
+    "nombre": "Goku",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/Goku/17.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/Goku/17.jpg"
+    ]
+  },
+  {
+    "id": "personajes-grinch",
+    "nombre": "Grinch",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/Grinch/43.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/Grinch/43.jpg"
+    ]
+  },
+  {
+    "id": "personajes-harry-potter",
+    "nombre": "Harry Potter",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/Harry%20Potter/1.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/Harry%20Potter/1.jpg"
+    ]
+  },
+  {
+    "id": "personajes-itachi",
+    "nombre": "Itachi",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/Itachi/4.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/Itachi/4.jpg",
+      "assets/images/spa/Personajes/Itachi/8.jpg"
+    ]
+  },
+  {
+    "id": "personajes-jose-madero",
+    "nombre": "José Madero",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/Jos%C3%A9%20Madero/25.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/Jos%C3%A9%20Madero/25.jpg"
+    ]
+  },
+  {
+    "id": "personajes-luffy",
+    "nombre": "Luffy",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/Luffy/21.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/Luffy/21.jpg",
+      "assets/images/spa/Personajes/Luffy/24.jpg",
+      "assets/images/spa/Personajes/Luffy/29.jpg",
+      "assets/images/spa/Personajes/Luffy/38.jpg"
+    ]
+  },
+  {
+    "id": "personajes-michael-jackson",
+    "nombre": "Michael Jackson",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/Michael%20Jackson/33.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/Michael%20Jackson/33.jpg"
+    ]
+  },
+  {
+    "id": "personajes-7",
+    "nombre": "Personajes 1",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/7.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/7.jpg"
+    ]
+  },
+  {
+    "id": "personajes-28",
+    "nombre": "Personajes 10",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/28.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/28.jpg"
+    ]
+  },
+  {
+    "id": "personajes-30",
+    "nombre": "Personajes 11",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/30.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/30.jpg"
+    ]
+  },
+  {
+    "id": "personajes-32",
+    "nombre": "Personajes 12",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/32.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/32.jpg"
+    ]
+  },
+  {
+    "id": "personajes-36",
+    "nombre": "Personajes 13",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/36.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/36.jpg"
+    ]
+  },
+  {
+    "id": "personajes-40",
+    "nombre": "Personajes 14",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/40.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/40.jpg"
+    ]
+  },
+  {
+    "id": "personajes-9",
+    "nombre": "Personajes 2",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/9.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/9.jpg"
+    ]
+  },
+  {
+    "id": "personajes-10",
+    "nombre": "Personajes 3",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/10.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/10.jpg"
+    ]
+  },
+  {
+    "id": "personajes-11",
+    "nombre": "Personajes 4",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/11.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/11.jpg"
+    ]
+  },
+  {
+    "id": "personajes-12",
+    "nombre": "Personajes 5",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/12.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/12.jpg"
+    ]
+  },
+  {
+    "id": "personajes-16",
+    "nombre": "Personajes 6",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/16.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/16.jpg"
+    ]
+  },
+  {
+    "id": "personajes-18",
+    "nombre": "Personajes 7",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/18.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/18.jpg"
+    ]
+  },
+  {
+    "id": "personajes-23",
+    "nombre": "Personajes 8",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/23.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/23.jpg"
+    ]
+  },
+  {
+    "id": "personajes-27",
+    "nombre": "Personajes 9",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/27.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/27.jpg"
+    ]
+  },
+  {
+    "id": "personajes-pikachu",
+    "nombre": "Pikachu",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/Pikachu/5.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/Pikachu/5.jpg"
+    ]
+  },
+  {
+    "id": "personajes-snoopy",
+    "nombre": "Snoopy",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/Snoopy/37.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/Snoopy/37.jpg",
+      "assets/images/spa/Personajes/Snoopy/41.jpg"
+    ]
+  },
+  {
+    "id": "personajes-spiderman",
+    "nombre": "SpiderMan",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/SpiderMan/2.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/SpiderMan/2.jpg",
+      "assets/images/spa/Personajes/SpiderMan/15.jpg",
+      "assets/images/spa/Personajes/SpiderMan/19.jpg",
+      "assets/images/spa/Personajes/SpiderMan/20.jpg",
+      "assets/images/spa/Personajes/SpiderMan/31.jpg"
+    ]
+  },
+  {
+    "id": "personajes-squirtle",
+    "nombre": "Squirtle",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/Squirtle/6.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/Squirtle/6.jpg",
+      "assets/images/spa/Personajes/Squirtle/14.jpg"
+    ]
+  },
+  {
+    "id": "personajes-stich",
+    "nombre": "Stich",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/Stich/39.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/Stich/39.jpg"
+    ]
+  },
+  {
+    "id": "personajes-trash-the-dragon",
+    "nombre": "Trash The Dragon",
+    "categoria": "Personajes",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personajes/Trash%20the%20Dragon/3.jpg",
+    "galeria": [
+      "assets/images/spa/Personajes/Trash%20the%20Dragon/3.jpg",
+      "assets/images/spa/Personajes/Trash%20the%20Dragon/22.jpg",
+      "assets/images/spa/Personajes/Trash%20the%20Dragon/26.jpg",
+      "assets/images/spa/Personajes/Trash%20the%20Dragon/42.jpg"
+    ]
+  },
+  {
+    "id": "personalizados-banda-de-guerra",
+    "nombre": "Banda De Guerra",
+    "categoria": "Personalizados",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personalizados/Banda%20de%20Guerra/9.jpg",
+    "galeria": [
+      "assets/images/spa/Personalizados/Banda%20de%20Guerra/9.jpg",
+      "assets/images/spa/Personalizados/Banda%20de%20Guerra/14.jpg",
+      "assets/images/spa/Personalizados/Banda%20de%20Guerra/19.jpg"
+    ]
+  },
+  {
+    "id": "personalizados-enfermera",
+    "nombre": "Enfermera",
+    "categoria": "Personalizados",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personalizados/Enfermera/1.jpg",
+    "galeria": [
+      "assets/images/spa/Personalizados/Enfermera/1.jpg",
+      "assets/images/spa/Personalizados/Enfermera/4.jpg",
+      "assets/images/spa/Personalizados/Enfermera/12.jpg",
+      "assets/images/spa/Personalizados/Enfermera/13.jpg",
+      "assets/images/spa/Personalizados/Enfermera/18.jpg"
+    ]
+  },
+  {
+    "id": "personalizados-2",
+    "nombre": "Personalizados 1",
+    "categoria": "Personalizados",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personalizados/2.jpg",
+    "galeria": [
+      "assets/images/spa/Personalizados/2.jpg"
+    ]
+  },
+  {
+    "id": "personalizados-16",
+    "nombre": "Personalizados 10",
+    "categoria": "Personalizados",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personalizados/16.jpg",
+    "galeria": [
+      "assets/images/spa/Personalizados/16.jpg"
+    ]
+  },
+  {
+    "id": "personalizados-17",
+    "nombre": "Personalizados 11",
+    "categoria": "Personalizados",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personalizados/17.jpg",
+    "galeria": [
+      "assets/images/spa/Personalizados/17.jpg"
+    ]
+  },
+  {
+    "id": "personalizados-20",
+    "nombre": "Personalizados 12",
+    "categoria": "Personalizados",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personalizados/20.jpg",
+    "galeria": [
+      "assets/images/spa/Personalizados/20.jpg"
+    ]
+  },
+  {
+    "id": "personalizados-3",
+    "nombre": "Personalizados 2",
+    "categoria": "Personalizados",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personalizados/3.jpg",
+    "galeria": [
+      "assets/images/spa/Personalizados/3.jpg"
+    ]
+  },
+  {
+    "id": "personalizados-5",
+    "nombre": "Personalizados 3",
+    "categoria": "Personalizados",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personalizados/5.jpg",
+    "galeria": [
+      "assets/images/spa/Personalizados/5.jpg"
+    ]
+  },
+  {
+    "id": "personalizados-6",
+    "nombre": "Personalizados 4",
+    "categoria": "Personalizados",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personalizados/6.jpg",
+    "galeria": [
+      "assets/images/spa/Personalizados/6.jpg"
+    ]
+  },
+  {
+    "id": "personalizados-7",
+    "nombre": "Personalizados 5",
+    "categoria": "Personalizados",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personalizados/7.jpg",
+    "galeria": [
+      "assets/images/spa/Personalizados/7.jpg"
+    ]
+  },
+  {
+    "id": "personalizados-8",
+    "nombre": "Personalizados 6",
+    "categoria": "Personalizados",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personalizados/8.jpg",
+    "galeria": [
+      "assets/images/spa/Personalizados/8.jpg"
+    ]
+  },
+  {
+    "id": "personalizados-10",
+    "nombre": "Personalizados 7",
+    "categoria": "Personalizados",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personalizados/10.jpg",
+    "galeria": [
+      "assets/images/spa/Personalizados/10.jpg"
+    ]
+  },
+  {
+    "id": "personalizados-11",
+    "nombre": "Personalizados 8",
+    "categoria": "Personalizados",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personalizados/11.jpg",
+    "galeria": [
+      "assets/images/spa/Personalizados/11.jpg"
+    ]
+  },
+  {
+    "id": "personalizados-15",
+    "nombre": "Personalizados 9",
+    "categoria": "Personalizados",
+    "descripcion": "",
+    "imagen": "assets/images/spa/Personalizados/15.jpg",
+    "galeria": [
+      "assets/images/spa/Personalizados/15.jpg"
+    ]
+  }
 ]

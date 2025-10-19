@@ -41,6 +41,7 @@ export class HomeComponent {
   // Modal de imagen
   readonly isModalOpen = signal(false);
   readonly modalImage = signal<string>('');
+  readonly modalImages = signal<string[] | null>(null);
   readonly modalAlt = signal<string>('');
 
   constructor() {
@@ -61,9 +62,10 @@ export class HomeComponent {
     this.destacado.set(a);
   }
 
-  openImage(src: string, alt: string) {
-    this.modalImage.set(src);
-    this.modalAlt.set(alt);
+  openImage(item: Amigurumi) {
+    this.modalImage.set(item.imagen);
+    this.modalImages.set(item.galeria ?? null);
+    this.modalAlt.set(item.nombre);
     this.isModalOpen.set(true);
   }
 

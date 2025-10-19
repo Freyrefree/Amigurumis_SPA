@@ -41,3 +41,15 @@
 .categories-ribbon::-webkit-scrollbar { height: 6px; }
 .categories-ribbon::-webkit-scrollbar-track { background: rgba(0,0,0,.04); border-radius: 999px; }
 .categories-ribbon::-webkit-scrollbar-thumb { background: rgba(13,110,253,.25); border-radius: 999px; }
+
+/* Indicador de tipo de medio (colección vs imagen) */
+.ami-card .media-indicator {
+  display: inline-grid;
+  place-items: center;
+  width: 28px; height: 28px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--cat, var(--pastel-lilac)) 24%, #fff);
+  border: 1px solid color-mix(in srgb, var(--cat, var(--pastel-lilac)) 40%, #fff);
+  color: #1f2d3a;
+}
+.ami-card .media-indicator svg { width: 18px; height: 18px; display: block; }

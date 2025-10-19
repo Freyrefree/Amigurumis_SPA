@@ -26,7 +26,7 @@
       <div class="col" *ngFor="let a of filtrados()">
         <div class="card h-100 border-0 shadow-sm ami-card hover-lift" [attr.data-category]="a.categoria" (click)="seleccionarDestacado(a)">
           <div class="ratio ratio-1x1 bg-light position-relative overflow-hidden">
-            <img class="w-100 h-100 object-fit-cover" [src]="a.imagen" [alt]="a.nombre" (click)="openImage(a.imagen, a.nombre); $event.stopPropagation()" />
+            <img class="w-100 h-100 object-fit-cover" [src]="a.imagen" [alt]="a.nombre" (click)="openImage(a); $event.stopPropagation()" />
           </div>
           <div class="card-body">
             <div class="d-flex justify-content-between align-items-start">
@@ -34,12 +34,33 @@
                 <h3 class="h6 mb-1">{{ a.nombre }}</h3>
                 <span class="badge rounded-pill text-bg-primary">{{ a.categoria }}</span>
               </div>
+              <div class="d-flex align-items-center gap-2">
+                <span class="media-indicator" [attr.title]="(a.galeria?.length ?? 0) > 1 ? 'Colección' : 'Imagen única'">
+                  <ng-container *ngIf="(a.galeria?.length ?? 0) > 1; else singlePic">
+                    <!-- icono colección -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="7" y="7" width="10" height="10" rx="2" ry="2"></rect>
+                      <rect x="3" y="3" width="10" height="10" rx="2" ry="2"></rect>
+                    </svg>
+                  </ng-container>
+                  <ng-template #singlePic>
+                    <!-- icono imagen única -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="4" y="4" width="16" height="16" rx="3" ry="3"></rect>
+                      <path d="M8 14l2.5-3 3 4 2-2 2.5 3"></path>
+                      <circle cx="9" cy="9" r="1.5"></circle>
+                    </svg>
+                  </ng-template>
+                </span>
+                <button type="button" class="btn btn-sm btn-outline-primary" (click)="openImage(a); $event.stopPropagation()">Ver</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <app-image-modal [visible]="isModalOpen()" [src]="modalImage()" [alt]="modalAlt()" (closed)="closeImage()"></app-image-modal>
+    <app-image-modal [visible]="isModalOpen()" [src]="modalImage()" [alt]="modalAlt()" (closed)="closeImage()" [images]="modalImages()"></app-image-modal>
   </div>
 </section>
+

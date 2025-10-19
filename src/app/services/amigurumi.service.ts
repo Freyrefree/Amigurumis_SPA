@@ -14,7 +14,7 @@ export class AmigurumiService {
   readonly categorias = this.categoriasOficiales.asReadonly();
   
   constructor() {
-    const url = 'assets/images/spa/manifest.json';
+    const url = 'assets/images/spa/manifest.json?ts=' + Date.now();
     fetch(url)
       .then((r) => r.ok ? r.json() : [])
       .then((items: any) => {
@@ -24,6 +24,9 @@ export class AmigurumiService {
           categoria: it.categoria as AmigurumiCategory,
           descripcion: String(it.descripcion ?? ''),
           imagen: String((it.imagen ?? '')).replace(/^\/?assets\//, 'assets/'),
+          galeria: Array.isArray(it.galeria)
+            ? it.galeria.map((g: string) => String(g).replace(/^\/?assets\//, 'assets/'))
+            : undefined,
           etiquetas: Array.isArray(it.etiquetas) ? it.etiquetas : undefined
         }));
         this.data.set(normalized);
